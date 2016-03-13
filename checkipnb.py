@@ -8,11 +8,7 @@ Each cell is submitted to the kernel, and checked for errors.
 """
 
 import os,sys,time
-
-from Queue import Empty
-
 from jupyter_client import KernelManager
-
 from nbformat import read, reads, NotebookNode
 
 def run_notebook(nb, ipynb):
